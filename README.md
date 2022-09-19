@@ -29,13 +29,6 @@ While it, of course, still is possible to shoot yourself in the foot with TypeSc
 
 ## Installation
 
-**Creating a project from the `template-typescript` template**
-
-To generate a TypeScript project that includes the dependencies and initial configuration, navigate to the [template-typescript](https://github.com/k6io/template-typescript) page and click **Use this template**.
-
-  ![](docs/use-this-template-button.png)
-
-
 **Install dependencies**
 
 Clone the generated repository on your local machine, move to the project root folder and install the dependencies defined in [`package.json`](./package.json)
@@ -64,7 +57,6 @@ $ k6 run dist/get-200-status-test.js
 
 House rules for writing tests:
 - The test code is located in `src` folder
-- The entry points for the tests need to have "_test_" word in the name to distinguish them from auxiliary files. You can change the entry [here](./webpack.config.js#L8). 
 - If static files are required then add them to `./assets` folder. Its content gets copied to the destination folder (`dist`) along with compiled scripts.
 
 ### Transpiling and Bundling
